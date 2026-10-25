@@ -380,6 +380,19 @@ def test_the_app_must_send_the_api_server_key(monkeypatch):
     assert hermsy.verify_http_event_request("")[0] is False
 
 
+def test_restart_notices_stay_off_the_phone(monkeypatch):
+    monkeypatch.delenv("HERMSY_RESTART_NOTICES", raising=False)
+    config = adapter.PlatformConfig()
+    config.gateway_restart_notification = True
+    adapter.HermsyAdapter(config)
+    assert config.gateway_restart_notification is False
+    monkeypatch.setenv("HERMSY_RESTART_NOTICES", "on")
+    config = adapter.PlatformConfig()
+    config.gateway_restart_notification = True
+    adapter.HermsyAdapter(config)
+    assert config.gateway_restart_notification is True
+
+
 def test_push_can_be_turned_off(monkeypatch):
     monkeypatch.setenv("HERMSY_PUSH_URL", "off")
     assert adapter.push_url() == ""
