@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Frank's Brief widget, light theme. values-night has the dark one. -->
+<resources>
+    <color name="brief_widget_bg">#F5FBFBFD</color>
+    <color name="brief_widget_stroke">#14000000</color>
+    <color name="brief_widget_text">#FF14161C</color>
+    <color name="brief_widget_secondary">#FF5B6272</color>
+    <color name="brief_widget_hint">#FF7C8497</color>
+    <color name="brief_widget_gold">#FFA06A0C</color>
+    <color name="brief_widget_danger">#FFC2353B</color>
+    <string name="brief_widget_label">Hermsy Brief</string>
+    <string name="brief_widget_description">Your day at a glance, from Hermsy</string>
+</resources>

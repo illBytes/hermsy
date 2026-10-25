@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A large widget, like Samsung's Brief: four cells wide, two or more tall.
+     It redraws every 30 minutes so the greeting and date stay current; new
+     briefs push an update straight away. -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="110dp"
+    android:minResizeWidth="180dp"
+    android:minResizeHeight="110dp"
+    android:targetCellWidth="4"
+    android:targetCellHeight="3"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/brief_widget"
+    android:previewLayout="@layout/brief_widget"
+    android:description="@string/brief_widget_description"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen" />

@@ -1,0 +1,16 @@
+# Hermsy push service. See README.md.
+services:
+  hermsy-push:
+    build: .
+    container_name: hermsy-push
+    restart: unless-stopped
+    environment:
+      FCM_SERVICE_ACCOUNT: /secrets/firebase.json
+    volumes:
+      # firebase.json: the illbytes Firebase service account key, read-only.
+      # It never goes into the app or into anyone's Hermes.
+      - ./secrets:/secrets:ro
+    ports:
+      # Caddy reaches it here (push.hermsy.illbytes.com). Loopback only.
+      - "127.0.0.1:8651:8080"
+    mem_limit: 96m

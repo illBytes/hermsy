@@ -1,0 +1,4 @@
+# Everything the Python tests need: the push service and the Hermsy plugin.
+#   python3 -m venv server/.venv && server/.venv/bin/pip install -r server/requirements-dev.txt
+-r push/requirements.txt
+pytest==9.1.1

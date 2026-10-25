@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Frank's Brief widget, dark theme: Frank's black glass and gold. -->
+<resources>
+    <color name="brief_widget_bg">#F00E1118</color>
+    <color name="brief_widget_stroke">#1FFFFFFF</color>
+    <color name="brief_widget_text">#FFECEFF6</color>
+    <color name="brief_widget_secondary">#FFA3AABB</color>
+    <color name="brief_widget_hint">#FF7C8497</color>
+    <color name="brief_widget_gold">#FFE6B54A</color>
+    <color name="brief_widget_danger">#FFFF8A8A</color>
+</resources>
