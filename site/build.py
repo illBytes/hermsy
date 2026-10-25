@@ -24,6 +24,7 @@ PAGES = [
     (SITE / "pages" / "setup.md", "setup/index.html", "Set up Hermsy", "Setup"),
     (ROOT / "store" / "privacy-policy.md", "privacy/index.html", "Hermsy privacy policy", "Privacy"),
     (SITE / "pages" / "support.md", "support/index.html", "Hermsy support", "Support"),
+    (SITE / "pages" / "delete-data.md", "delete-data/index.html", "Delete your Hermsy data", None),
 ]
 
 
@@ -48,6 +49,7 @@ def main() -> None:
             f'<a href="{prefix}{"" if p == "index.html" else p.replace("index.html", "")}"'
             f'{" aria-current=\"page\"" if p == path else ""}>{l}</a>'
             for _, p, _, l in PAGES
+            if l  # pages without a label are linked from others, not the menu
         )
         page = (
             template.replace("{{TITLE}}", title)

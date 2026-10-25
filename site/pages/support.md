@@ -19,4 +19,4 @@ Every reply, Inbox message and Brief can be reported as offensive or wrong: long
 
 ## Your data
 
-Delete a chat or an Inbox message in Hermsy to remove it from your phone; uninstalling Hermsy removes everything it stored. What Hermes keeps is on your own server, under your control. See the [privacy policy](../privacy/).
+Delete a chat or an Inbox message in Hermsy to remove it from your phone; uninstalling Hermsy removes everything it stored. What Hermes keeps is on your own server, under your control. See [how to delete your data](../delete-data/) and the [privacy policy](../privacy/).
