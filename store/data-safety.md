@@ -64,11 +64,29 @@ server). This keeps Hermsy out of the Families policy requirements.
 
 ## App access (for Google's reviewers)
 
-Hermsy does nothing without a Hermes server, so reviewers need one. In
-"App access", choose "All or some functionality is restricted" and give
-them a server address and API key for a test Hermes server (not your own),
-with a note: "Open Hermsy, create any PIN, then Settings › Hermes › enter the
-address and key."
+Hermsy does nothing without a Hermes server, so reviewers get a test one:
+the `review` instance on the illbytes VPS (made with `hermes-spawn review`
+and `hermes-spawn connect review`). It's locked down: no terminal, file,
+code or browser tools, so reviewers can chat, call and see the Inbox and
+Brief, but can't run anything on the server. It uses a free model.
+
+In Play Console, App content › App access: choose **All or some
+functionality is restricted**, add one set of instructions, and paste:
+
+- **Name:** Test Hermes server
+- **Username:** `https://review.187-77-179-77.sslip.io`
+- **Password:** the key, from `hermes-spawn connect review --show-key` on the
+  server (never commit it)
+- **Any other information:**
+
+  > Hermsy is a client for Hermes Agent, a self-hosted AI agent. We run a
+  > test Hermes server for you. 1) Open Hermsy and create any 4-digit PIN.
+  > 2) On the Hermes screen, enter the Server URL (the username above) and
+  > the API key (the password above), then tap Save and check. 3) Try:
+  > chat ("What can you do?"); the Inbox ("Remind me in 2 minutes to
+  > stretch", which arrives as a notification); the Brief (the sun button
+  > at the top of the chat). Voice calls need the free on-device voice models (Settings ›
+  > Voice › Voice models, about 1.5 GB); dictation works without them.
 
 ## Ads
 
