@@ -56,3 +56,9 @@ server/.venv/
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Built website (site/build.py)
+_site/
+
+# Local tool settings (Claude Code previews and the like)
+.claude/

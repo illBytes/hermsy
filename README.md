@@ -2,7 +2,7 @@
 
 Hermsy is a phone app for your own [Hermes Agent](https://hermes-agent.nousresearch.com/): chat, voice calls, an Inbox for what Hermes sends on its own, a Brief of your day, and a Chief of Staff that texts you only when something needs you. It talks to your Hermes over HTTPS. There is no Hermsy account and no Hermsy cloud.
 
-Published on Google Play by illbytes as **Hermsy** (`com.illbytes.hermsy_app`). This repo holds the Android app (Flutter) and the server pieces it relies on.
+Published on Google Play by illbytes as **Hermsy** (`com.illbytes.hermsy_app`). Website: [hermsy.illbytes.com](https://hermsy.illbytes.com). This repo holds the Android app (Flutter), the server pieces it relies on, and the website.
 
 ## How it fits
 
@@ -149,6 +149,7 @@ server/        the Hermsy plugin and the push service
 store/         Play listing, policy, data safety, screenshots, graphics
 tool/          build, export, screenshots, voice models
 docs/          setting up Hermsy for anyone
+site/          hermsy.illbytes.com (built by site/build.py, published by .github/workflows/pages.yml)
 ```
 
 ## License

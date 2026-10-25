@@ -1,0 +1,41 @@
+<section class="hero">
+  <img class="icon" src="static/img/icon.png" alt="Hermsy icon" width="112" height="112">
+  <h1>Your own AI agent,<br>in your pocket.</h1>
+  <p class="lead">Hermsy is a private phone app for <a href="https://hermes-agent.nousresearch.com/">Hermes Agent</a>, the AI agent you run on your own server. Chat, talk, and let it reach you. No Hermsy account, no Hermsy cloud.</p>
+  <div class="buttons">
+    <a class="button primary" href="https://play.google.com/store/apps/details?id=com.illbytes.hermsy_app">Google Play <span class="soon">· coming soon</span></a>
+    <a class="button" href="setup/">Set up your Hermes</a>
+    <a class="button" href="https://github.com/illBytes/hermsy">Source on GitHub</a>
+  </div>
+</section>
+
+<div class="shots">
+  <img src="static/img/01_chat.png" alt="A chat with your agent" loading="lazy">
+  <img src="static/img/02_call.png" alt="A voice call" loading="lazy">
+  <img src="static/img/03_brief.png" alt="The Brief: your day at a glance" loading="lazy">
+  <img src="static/img/05_inbox.png" alt="The Inbox" loading="lazy">
+</div>
+
+<section class="features">
+  <div class="card"><h3>Talk, don't type</h3><p>Start a voice call and just talk. Hermsy listens and speaks on your phone, waits while you think, and keeps going with the screen off.</p></div>
+  <div class="card"><h3>Your voice stays on the phone</h3><p>Download the free voice models once, and speech becomes text on the device. Calls run on the same models.</p></div>
+  <div class="card"><h3>The Brief</h3><p>A short summary of your day: what's on, what's due, and what your agent suggests. Also as a home-screen widget.</p></div>
+  <div class="card"><h3>An Inbox for what your agent sends</h3><p>Scheduled jobs and reminders arrive as notifications and wait in the Inbox. Reply to any of them in its own chat.</p></div>
+  <div class="card"><h3>A Chief of Staff</h3><p>It texts you when something needs you, and stays quiet otherwise. Tell it what matters and it remembers.</p></div>
+  <div class="card"><h3>Private by design</h3><p>Locked with a PIN or fingerprint, encrypted on the phone, no ads, no analytics, no tracking.</p></div>
+</section>
+
+<section class="band">
+  <h2>Notifications that Google can't read</h2>
+  <p>When your agent sends you something, it stays on your server. Your phone gets a push that carries nothing at all, not even an ID, and then fetches the message from your own Hermes over HTTPS. Google sees only that your phone was woken. <a href="privacy/">How it works</a>.</p>
+</section>
+
+<section class="band">
+  <h2>Up and running in a few minutes</h2>
+  <p>Running Hermes in Docker with <a href="https://github.com/oscarfrank/hermes-spawn">hermes-spawn</a>?</p>
+  <ol class="steps">
+    <li><code>hermes-spawn connect &lt;name&gt;</code>: it switches on the API server, installs the Hermsy plugin, gives Hermes an HTTPS address, and shows a QR code.</li>
+    <li>Install Hermsy and tap <strong>Scan QR code</strong>.</li>
+  </ol>
+  <p>Any other Hermes works too: <a href="setup/">see the setup guide</a>.</p>
+</section>

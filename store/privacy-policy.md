@@ -1,6 +1,6 @@
 # Hermsy privacy policy
 
-_Effective 24 October 2026. Hermsy is made by illbytes._
+_Effective 25 October 2026. Hermsy is made by illbytes._
 
 Hermsy is an app for talking to **Hermes Agent**, an AI agent that you run on
 a server of your own. This policy explains what Hermsy does with your
@@ -59,7 +59,9 @@ Hermsy's data is not included in Android backups.
 - **Microphone**: for dictation and voice calls, only while you use them.
   During a call Hermsy keeps listening with the screen off, shown by an
   ongoing "Call with Hermsy" notification.
-- **Camera**: to take a picture to send, only when you choose to.
+- **Camera**: to take a picture to send, or to scan the QR code that connects
+  Hermsy to your Hermes, only when you choose to. A scanned code is read on
+  the phone; the camera image never leaves it.
 - **Notifications**: to show messages your agent sends.
 - **Fingerprint**: to unlock Hermsy; your fingerprint never reaches Hermsy.
 

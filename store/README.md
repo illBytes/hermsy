@@ -29,10 +29,10 @@ Everything for the Play Store is here:
    can reset an upload key, but it takes days.)
 2. **Register the new app IDs in Firebase**, for notifications: follow
    `firebase-setup.md`. Until then the app builds without push.
-3. **Host the privacy policy** at a public URL (your illbytes site, or a
-   page served by your relay) and put the URL in the listing. Make sure
-   support@illbytes.com receives mail: reports and Google's notices go
-   there.
+3. **The privacy policy** is published at https://hermsy.illbytes.com/privacy/,
+   built from `privacy-policy.md` by the Website workflow on every push.
+   Make sure support@illbytes.com receives mail: reports and Google's
+   notices go there.
 4. **Give Google's reviewers a test Hermes server** (address and key) for
    "App access". Not your own server: they would use your agent.
 5. **Record a short video** of a call continuing with the screen locked,

@@ -1,0 +1,91 @@
+/* hermsy.illbytes.com: the app's palette (near-black, gold), light and dark. */
+:root {
+  --bg: #f4f5f9;
+  --surface: #ffffff;
+  --text: #14161d;
+  --muted: #5b6070;
+  --line: #e3e5ec;
+  --gold: #b7862a;
+  --gold-soft: rgba(183, 134, 42, 0.12);
+  --code: #eef0f5;
+  --glow: radial-gradient(60rem 30rem at 50% -8rem, rgba(92, 108, 255, 0.16), transparent 70%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #05060a;
+    --surface: #0e1017;
+    --text: #eceef4;
+    --muted: #9aa0b0;
+    --line: #1c1f2a;
+    --gold: #e6b54a;
+    --gold-soft: rgba(230, 181, 74, 0.14);
+    --code: #12141c;
+    --glow: radial-gradient(60rem 30rem at 50% -8rem, rgba(92, 108, 255, 0.28), transparent 70%);
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--glow), var(--bg);
+  background-repeat: no-repeat;
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+}
+a { color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+img { max-width: 100%; height: auto; }
+
+.bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  max-width: 64rem; margin: 0 auto; padding: 1rem 1rem;
+}
+.brand { display: flex; align-items: center; gap: .55rem; color: var(--text); text-decoration: none; font-weight: 700; font-size: 1.1rem; }
+.brand img { border-radius: 8px; }
+nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
+nav a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+nav a:hover, nav a[aria-current="page"] { color: var(--text); }
+.brand { flex-shrink: 0; }
+@media (max-width: 600px) {
+  .bar { flex-direction: column; align-items: flex-start; gap: .6rem; }
+}
+
+main { max-width: 64rem; margin: 0 auto; padding: 0 1rem 3rem; }
+body.doc main { max-width: 46rem; }
+body.doc main h1 { font-size: 2.1rem; line-height: 1.2; margin: 2rem 0 1rem; }
+h2 { margin-top: 2.2rem; line-height: 1.25; }
+code { background: var(--code); padding: .1em .35em; border-radius: 6px; font-size: .9em; }
+pre { background: var(--code); padding: 1rem; border-radius: 12px; overflow-x: auto; border: 1px solid var(--line); }
+pre code { background: none; padding: 0; }
+table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: .95rem; }
+th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+
+/* Home */
+.hero { text-align: center; padding: 3.5rem 0 2rem; }
+.hero img.icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 18px 60px rgba(92, 108, 255, .35); }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.05; margin: 1.2rem 0 .6rem; letter-spacing: -0.02em; }
+.hero p.lead { font-size: 1.2rem; color: var(--muted); max-width: 38rem; margin: 0 auto 1.6rem; }
+.buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.button {
+  display: inline-block; padding: .75rem 1.2rem; border-radius: 999px; text-decoration: none; font-weight: 600;
+  border: 1px solid var(--line); color: var(--text); background: var(--surface);
+}
+.button.primary { background: var(--gold); border-color: var(--gold); color: #1a1206; }
+.button .soon { font-weight: 400; opacity: .75; font-size: .9em; }
+.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2.5rem 0 1rem; }
+.shots img { border-radius: 22px; border: 1px solid var(--line); }
+@media (max-width: 720px) { .shots { grid-template-columns: repeat(2, 1fr); } }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 2.5rem 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 1.2rem 1.3rem; }
+.card h3 { margin: 0 0 .35rem; font-size: 1.05rem; }
+.card p { margin: 0; color: var(--muted); font-size: .97rem; }
+
+.band { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 1.6rem 1.6rem .6rem; margin: 2rem 0; }
+.band h2 { margin-top: 0; }
+.steps { padding-left: 1.2rem; }
+.steps li { margin: .35rem 0; }
+
+footer { max-width: 64rem; margin: 0 auto; padding: 2rem 1rem 3rem; color: var(--muted); font-size: .92rem; border-top: 1px solid var(--line); }
+footer p { margin: .35rem 0; }
+footer .small { font-size: .85rem; }

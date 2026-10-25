@@ -71,8 +71,8 @@ in Hermsy and you're connected.
 ## Contact details
 
 - Email: support@illbytes.com
-- Website: _illbytes site, if any_
-- Privacy policy URL: where you host `privacy-policy.md` (see README)
+- Website: https://hermsy.illbytes.com
+- Privacy policy URL: https://hermsy.illbytes.com/privacy/ (built from `privacy-policy.md`)
 
 ## Graphics
 
